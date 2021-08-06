@@ -15,6 +15,8 @@
 		BFBD7DAE26BCDB1F006D2C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBD7DAC26BCDB1F006D2C94 /* LaunchScreen.storyboard */; };
 		BFBD7DB926BCDB1F006D2C94 /* NavigationBarAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD7DB826BCDB1F006D2C94 /* NavigationBarAppearanceTests.swift */; };
 		BFBD7DC426BCDB1F006D2C94 /* NavigationBarAppearanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD7DC326BCDB1F006D2C94 /* NavigationBarAppearanceUITests.swift */; };
+		BFBD7DD226BCDB49006D2C94 /* PageSheetNavigationBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBD7DD126BCDB49006D2C94 /* PageSheetNavigationBar.storyboard */; };
+		BFBD7DD426BCDB52006D2C94 /* PageSheetNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD7DD326BCDB52006D2C94 /* PageSheetNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BFBD7DBF26BCDB1F006D2C94 /* NavigationBarAppearanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBarAppearanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBD7DC326BCDB1F006D2C94 /* NavigationBarAppearanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearanceUITests.swift; sourceTree = "<group>"; };
 		BFBD7DC526BCDB1F006D2C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBD7DD126BCDB49006D2C94 /* PageSheetNavigationBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageSheetNavigationBar.storyboard; sourceTree = "<group>"; };
+		BFBD7DD326BCDB52006D2C94 /* PageSheetNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSheetNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				BFBD7DA126BCDB1E006D2C94 /* AppDelegate.swift */,
 				BFBD7DA326BCDB1E006D2C94 /* SceneDelegate.swift */,
 				BFBD7DA526BCDB1E006D2C94 /* ViewController.swift */,
+				BFBD7DD526BCDBA4006D2C94 /* PageSheet */,
 				BFBD7DA726BCDB1E006D2C94 /* Main.storyboard */,
 				BFBD7DAA26BCDB1F006D2C94 /* Assets.xcassets */,
 				BFBD7DAC26BCDB1F006D2C94 /* LaunchScreen.storyboard */,
@@ -126,6 +131,15 @@
 				BFBD7DC526BCDB1F006D2C94 /* Info.plist */,
 			);
 			path = NavigationBarAppearanceUITests;
+			sourceTree = "<group>";
+		};
+		BFBD7DD526BCDBA4006D2C94 /* PageSheet */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD7DD126BCDB49006D2C94 /* PageSheetNavigationBar.storyboard */,
+				BFBD7DD326BCDB52006D2C94 /* PageSheetNavigationBar.swift */,
+			);
+			path = PageSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBD7DAE26BCDB1F006D2C94 /* LaunchScreen.storyboard in Resources */,
+				BFBD7DD226BCDB49006D2C94 /* PageSheetNavigationBar.storyboard in Resources */,
 				BFBD7DAB26BCDB1F006D2C94 /* Assets.xcassets in Resources */,
 				BFBD7DA926BCDB1E006D2C94 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +275,7 @@
 			files = (
 				BFBD7DA626BCDB1E006D2C94 /* ViewController.swift in Sources */,
 				BFBD7DA226BCDB1E006D2C94 /* AppDelegate.swift in Sources */,
+				BFBD7DD426BCDB52006D2C94 /* PageSheetNavigationBar.swift in Sources */,
 				BFBD7DA426BCDB1E006D2C94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
