@@ -16,6 +16,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func tapPageSheetButton(_ sender: Any) {
+        let pageSeetViewController = UIStoryboard(name: "PageSheetNavigationBar", bundle: nil).instantiateInitialViewController() as! PageSheetNavigationBar
+        
+        let navigationController = UINavigationController(rootViewController: pageSeetViewController)
+        
+        navigationController.modalPresentationStyle = .pageSheet
+        present(navigationController, animated: true, completion: nil)
+        
     }
 }
 
