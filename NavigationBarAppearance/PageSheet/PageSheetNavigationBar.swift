@@ -28,7 +28,7 @@ final class PageSheetNavigationBar: UIViewController {
         navigationItem.title = "Page Sheet"
 
         let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
+        appearance.configureWithDefaultBackground()
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
