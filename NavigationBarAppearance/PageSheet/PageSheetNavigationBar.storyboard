@@ -34,8 +34,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="389" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I84-Ue-p2V">
-                                                    <rect key="frame" x="8" y="18.5" width="50" height="50"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I84-Ue-p2V">
+                                                    <rect key="frame" x="8" y="20" width="50" height="47.5"/>
+                                                    <color key="tintColor" systemColor="systemPinkColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="2aj-ob-3fE"/>
                                                         <constraint firstAttribute="width" secondItem="I84-Ue-p2V" secondAttribute="height" multiplier="1:1" id="6cH-kX-dDZ"/>
@@ -48,6 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="fVw-ZW-Fsx" secondAttribute="trailing" constant="20" symbolic="YES" id="DLF-A1-DYa"/>
                                                 <constraint firstItem="fVw-ZW-Fsx" firstAttribute="leading" secondItem="I84-Ue-p2V" secondAttribute="trailing" constant="8" symbolic="YES" id="LZ6-da-V3A"/>
@@ -70,6 +72,9 @@
                             <constraint firstAttribute="bottom" secondItem="lm5-GQ-RZm" secondAttribute="bottom" id="xhE-cd-vhp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="lm5-GQ-RZm" id="0iR-qv-fFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,8 +82,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
